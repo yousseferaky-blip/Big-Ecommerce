@@ -1,0 +1,70 @@
+.LANG{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    right: -30px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  .LANGG{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 50%;
+    right: 1px;
+    transform: translateY(-50%);
+    z-index: 999;
+  }
+  .LANG-ICON{
+    font-size: 25px;
+    cursor: pointer;
+    animation: LA 2s infinite linear ;
+  }
+  @keyframes LA {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .LANG-BTN{
+    background: #5e41de33;
+    padding: 10px ;
+    z-index: 99;
+    text-align: center;
+  }
+  .LANG-BTN:hover {
+    background: #5e41de4d;
+  }
+  
+  .LANG-BTN div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 5px;
+  }
+  .LANG-BTN div button{
+    padding: 2px 5px;
+    border: none;
+    background: #5D41DE;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 6px;
+  }
+  
+  .ToTop{
+    margin-top: 5px;
+    background: #5D41DE;
+    color: #fff;
+    padding: 2px 5px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 6px;
+    cursor: pointer;
+  }

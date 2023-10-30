@@ -1,0 +1,67 @@
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid var(--border);
+    padding:  20px ;
+}
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+footer ul i{
+    font-size: 25px;
+    cursor: pointer;
+}
+footer span{
+    font-size: px;
+}
+.fa-facebook{
+    color: #3b5998;
+   
+}
+.fa-instagram{
+    color: #6a7794;
+}
+.fa-linkedin{
+    color: #0077B5;
+}
+.fa-whatsapp{
+    color: #25D366;
+}
+.fa-cc-visa{
+    color: #0077B5;
+}
+.fa-cc-paypal{
+    color: #2a739b;
+}
+.fa-cc-mastercard{
+    color: #54706f;
+}
+.fa-cc-discover{
+    color: #2f4049;
+}
+
+@media screen and (max-width:775px) {
+    footer{
+        flex-direction: column;
+        gap: 15px;
+    }
+    footer span{
+        text-align: center;
+    }
+}
+@media screen and (max-width:380px) {
+    footer span{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:335px) {
+    footer span{
+        font-size: 12px;
+    }
+}
+

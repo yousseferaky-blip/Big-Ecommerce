@@ -1,0 +1,14 @@
+.dashboard{
+    min-height: 100vh;
+    background: #f7f8fa;
+}
+
+.All-User{
+    width: 100%;
+    padding: 10px  ;
+}
+
+.IMAGE{
+    width: 100px;
+    height: 60px;
+}

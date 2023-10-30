@@ -1,0 +1,26 @@
+body{
+  font-family: 'Lato', sans-serif !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* GLOBAL */
+
+.container{
+  margin: 0 auto;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row .col-12{
+  width: 100%;
+}
+.row .col-6{
+  width: 50%;
+}
+

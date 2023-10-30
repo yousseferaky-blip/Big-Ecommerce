@@ -1,0 +1,461 @@
+
+/* .All-Products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    padding: 0 25px; */
+/* } */
+/* .Product{
+    border: 1px solid #c2c2c2;
+    height: 420px;
+}
+.Product .img{
+    width: 100%;
+    height: 250px;
+}
+.Product .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10px;
+}
+.info h3{
+    font-size: 20px;
+    color: #000;
+}
+.info p{
+    font-size: 15px;
+    color: #777;
+}
+
+.button{
+    padding: 0 10px;
+}
+.button button {
+    border: none;
+    background: #016DD9;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 18px;
+    border: 1px solid #016DD9;
+}
+.button button:hover{
+    background: #fff;
+    color: #016DD9;
+} 
+@media screen and (max-width:800px) {
+.All-Products{
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media screen and (max-width:540px) { 
+.All-Products{
+    grid-template-columns: repeat(1,1fr);
+}
+} */
+/* Start NavBar */
+
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    margin: 0 auto;
+    border-bottom: 1px solid #777777;
+    width: 100%;
+}
+.Header-Logo{
+    font-size: 1.4rem;
+}
+.loogo{
+    color: #000;
+}
+.Header ul{
+    display: flex;
+    margin: 0;
+    font-size: 1.2rem;
+    list-style: none;
+}
+.Header ul  li{
+    margin-right: 20px;
+}
+.Header ul  li a{
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.Header ul  li .active{
+    color: rgb(158, 141, 120);
+}
+.Header-Icon{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    gap: 25px;
+    font-size: 1.4rem;
+}
+.FontAwesomeIcon{
+    cursor: pointer;
+}
+.fa-bars-fa-time{
+    color: #000;
+}
+.Header-Icon .spaan{
+    position: relative;
+}
+.Header-Icon .spaan span{
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    font-size: 16px;
+    color: rgb(158, 141, 120);
+}
+.fa-bars-fa-times{
+    display: none;
+}
+
+@media screen and (max-width:760px) {
+    .fa-bars-fa-times{
+        display: block;
+    }
+    .Header .Nav-Mobil{
+        display: none;
+    }
+    .Header .Nav-Link{
+        position: absolute;
+        top: 55px;
+        left: 0;
+        z-index: 99; 
+        display: block;
+        padding-top: 15px;
+        width: 100%;
+        background:rgb(105, 105, 105);
+       
+    }
+    .Header .Nav-Link a{
+        color: #fff;
+    }
+    .Header .Nav-Link li{
+       padding: 15px 5px;
+       width: 100%;
+       border-bottom: 1px solid #fff;
+    }
+    
+}
+
+/* Start Home Slider */
+
+.HomeSlider-Container{
+    width: 100%;
+    background: #000;
+    margin: 0 auto;
+}
+.HomeSlider-Container div{
+    height: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background: #779ff0; 
+}
+.HomeSlider-Container div img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    object-fit: contain;
+}
+
+.HomeSlider-Container div h1{
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 50%;
+    font-weight: 800;
+}
+.HomeSlider-Container div p{
+    position: absolute;
+    top: 60%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 50%;
+    font-weight: 600;
+    letter-spacing: 1.05px;
+}
+
+@media screen and (max-width:750px) {
+    .HomeSlider-Container div img{
+        width: 250px;
+        height: 280px;
+    }
+}
+@media screen and (max-width:600px) {
+    .HomeSlider-Container div img{
+        width: 250px;
+        height: 280px;
+    }
+    .HomeSlider-Container div h1{
+        top: 20%;
+        width: 90%;
+    }
+    .HomeSlider-Container div p{
+        top: 35%;
+         width: 85%;
+    }
+}
+@media screen and (max-width:530px) {
+    .HomeSlider-Container div img{
+        width: 250px;
+        height: 250px;
+        top: 70%;
+        left: 50px;
+    }
+    .HomeSlider-Container div h1{
+        top: 20%;
+        width: 85%;
+    }
+    .HomeSlider-Container div p{
+        top: 35%;
+         width: 85%;
+    }
+}
+
+/* Start HomeTool */
+
+.HomeTool{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    margin: 50px 0;
+    padding: 0 25px;
+}
+.HomeTool div{
+    position: relative;
+    height: 250px;
+}
+.HomeTool div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.HomeTool div h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 32px;
+    font-weight: 800;
+    padding: 10px 0;
+    color: #fff;
+    text-transform: uppercase;
+}
+.HomeTool div h1::after{
+    position: absolute;
+    content: '';
+    background: #fff;
+    width: 0%;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+.HomeTool div:hover h1::after{
+    width: 100%;
+}
+
+@media screen and (max-width:600px) {
+    .HomeTool{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+}
+
+/* Start  HomeFlex */
+
+.HomeFlex{
+    display: flex;
+    margin: 50px 0;
+    padding: 0 25px;
+    gap: 20px;
+}
+.HomeFlex-Left{
+    flex: 1;
+    position: relative;
+}
+.HomeFlex-Right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.HomeFlex-Right div{
+    position: relative;
+}
+.HomeFlex img {
+    width: 100%;
+    height: 100%;
+}
+.HomeFlex h2 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    color: #000;
+    font-weight: 800;
+    font-size: 27px;
+}
+
+@media screen and (max-width:700px) {
+    .HomeFlex{
+        flex-direction: column;
+    }
+    .HomeFlex-Left{
+        height: 350px;
+    }
+    .HomeFlex-Left img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .HomeFlex-Right{
+        height: 350px;
+    }
+    .HomeFlex-Right div{
+        position: relative;
+        height: 150px;
+    }
+    .HomeFlex h2 {
+       font-size: 25px;
+    }
+}
+
+/* Start HomeOffer */
+
+.HomeOffer{
+    padding: 0 20px;
+    margin: 50px 0;
+}
+.HomeOffer h1{
+    margin: 20px 0;
+    font-size: 32px ;
+    color: rgb(43, 45, 66);
+    font-weight: 800;
+}
+.HomeOffer-Info{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    overflow: hidden;
+}
+.HomeOffer-Info div .image{
+    overflow: hidden;
+}
+.HomeOffer-Info img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+.HomeOffer-Info div:hover img{
+    transform: scale(1.2);
+}
+.HomeOffer-Info h5 {
+    margin: 15px 0;
+    color: rgb(43, 45, 66);
+}
+.HomeOffer-Info h5 a{
+    cursor: pointer;
+}
+
+@media screen and (max-width:730px) {
+    .HomeOffer-Info{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:450px) {
+    .HomeOffer-Info{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* Start Client */
+
+.Client{
+    padding:  20px;
+    background-image: url('./../../../Img/d7.jpg');
+    background-position: center;
+    background-size: cover;
+    margin: 50px 0;
+    height: 350px;
+}
+.Client .Client-reviews{
+   color: red;
+}
+.Client h1{
+    color: #fff;
+    font-weight: 900;
+}
+.Client-Say{
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+.Client-Say-Card{
+    padding: 10px 20px;
+}
+.Client-Say-Card p{
+    font-size: 17px;   
+    letter-spacing: 1.05px;
+    color: #888;
+}
+.Client-Say-Card div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.Client-Say img{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+.Client-Say h4{
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+    letter-spacing: 1.05px;
+}
+
+@media screen and (max-width:500px) {
+    .Client-Say-Card{
+        padding: 5px 10px;
+    }
+    .Client-Say-Card p{
+        font-size: 14px;   
+        color: #888;
+    }
+    .Client-Say img{
+        width: 42px;
+        height: 42px;
+    }
+    .Client-Say h4{
+        font-size: 16px;
+    }
+}
+
+
+
+

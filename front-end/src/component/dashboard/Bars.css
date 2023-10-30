@@ -1,0 +1,152 @@
+
+/*+++++++++++++++++++++++ TopBar +++++++++++++++++++++++ */
+.TopBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.TopBar-Icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.TopBar-Icon h3{
+    font-weight: 900;
+}
+.TopBar-Icon .Bars{
+    cursor: pointer;
+    font-size: 16px;
+    color: #555b6d;
+}
+
+.TopBar .TopBar-Logo{
+    display: none;
+}
+
+.TopBar .TopBar-UnLogo{
+    display: block;
+}
+
+@media screen and (max-width:900px) {
+    .TopBar .TopBar-Logo{
+        display: none;
+    }
+    
+    .TopBar .TopBar-UnLogo{
+        display: none;
+    } 
+}
+
+/*+++++++++++++++++++++++ SideBar +++++++++++++++++++++++ */
+/* CLOSE */
+
+.SideBar{
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 50px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 0 0 1px  rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.SideBar .NavLink{
+    font-size: 18px;
+    padding:  10px ;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.SideBar .text{
+    display: none;
+}
+.SideBar .NavLink:hover{
+    color: #000;
+}
+.SideBar .active{
+    background: #f2f3fe ;
+    color: #038edc;
+}
+
+/* OPEN */
+
+.sidebar{
+    position: sticky;
+    top: 70px;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background: #fff;
+    box-shadow: 0 0 0 1px  rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.NavLink{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #495057;
+    font-size: 18px;
+    transition: 0.3s;
+    padding:  10px 20px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+.sidebar .text{
+    display: block;
+    width: 100%;
+}
+.NavLink:hover{
+    color: #000;
+}
+.sidebar .active{
+    background: #f2f3fe ;
+    color: #038edc;
+}
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:900px) {
+    .SideBar{
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 220px;
+        height: 100vh;
+        background: #fff;
+        box-shadow: 0 0 0 1px  rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+    }
+    .SideBar .text{
+        display: block;
+    }
+    .sidebar{
+        position: fixed;
+        left: -120%;
+        transition: 0.3s;
+    }
+}
+
+/* ADD IMAGE */
+
+.add-image{
+    width: 20%;
+    height: 50px;
+    object-fit: contain;
+    text-align: left;
+}
+
+
+
